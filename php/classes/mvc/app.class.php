@@ -2,16 +2,18 @@
     namespace mvc;
 
     class App{
-        private $view;
-        private $controller;
+        private $router;
 
         public function __construct(){
-            $this->controller = new \controllers\TestController(null);
-            $this->view = new \views\testView($this->controller, null);
+            $this->router = new \mvc\Router();
         }
 
         public function __toString(){
-            return $this->view->getHTML();
+            try {
+                return $this->router->getView()->getHTML();
+            }   catch (Exception $e) {
+                return $e.getMessage;
+            }
         }
 
     }
