@@ -5,7 +5,7 @@
 
         private $route;
         private $view;
-        private $controller; // in de uitleg stond er controler
+        private $controller;
         private $model;
 
         public function __construct(){
