@@ -1,5 +1,5 @@
 <?php 
-    define("DEFAULT_ROUTE", "home");
+    define("DEFAULT_ROUTE", "red");
 
     $routes = array(
         "home" => array(
@@ -13,6 +13,13 @@
         "test" => array(
             "view" => "TestView",
             "controller" => "TestController",
+        ),
+        "red" => array(
+            "controller" => "RedController",
+          ),
+        "blue" => array(
+            "view" => "blueView",
+            "controller" => "BlueController",
         ),
     );
 ?>

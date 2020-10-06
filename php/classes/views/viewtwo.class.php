@@ -1,9 +1,10 @@
-<?php 
+<?php
     namespace views;
-    
-    class HomeView extends \mvc\View {
+
+    class ViewTwo extends \mvc\view {
         public function getHTML(){
-            $output = "<p>Home View</p>";
+            $output = "<p>View Two</p>";
+
             return $output;
         }
     }

@@ -1,4 +1,4 @@
-<?php 
+<?php
     namespace views;
     
     class TestView extends \mvc\View {
